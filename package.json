@@ -1,0 +1,38 @@
+{
+  "name": "qaf-test-automation-project",
+  "version": "1.0.0",
+  "description": "A testing project for QAF (Quality Automation Framework)",
+  "main": "test_scripts/test-runner.js",
+  "scripts": {
+    "test": "node test_scripts/test-runner.js",
+    "test:playwright": "npx playwright test test_scripts/playwright",
+    "test:selenium": "node test_scripts/selenium/tc-web-001.js",
+    "test:puppeteer": "node test_scripts/puppeteer/tc-web-001.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkumv1/qaf-test-automation-project.git"
+  },
+  "keywords": [
+    "qaf",
+    "automation",
+    "testing",
+    "playwright",
+    "selenium",
+    "puppeteer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pkumv1/qaf-test-automation-project/issues"
+  },
+  "homepage": "https://github.com/pkumv1/qaf-test-automation-project#readme",
+  "dependencies": {
+    "jspdf": "^2.5.1",
+    "puppeteer": "^20.0.0",
+    "selenium-webdriver": "^4.15.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}
